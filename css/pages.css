@@ -1,0 +1,221 @@
+/* FONTS */
+@font-face {
+    font-family: 'Assassin';
+    src: url('/fonts/assassins-creed/Assassin$.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* VARIABLES */
+
+:root {
+    /* FONT */
+    --FF-HD: 'Assassin';
+    --FF: 'ROBOTO', sans-serif;
+    --FS: 2rem;
+    --FSL: 2.5rem;
+
+
+    /* COLOR */
+    --HEADER-BG-COLOR: oklch(27.1% 0.105 12.094);
+    --HEADER-COLOR: whitesmoke;
+    --BODY-BG-COLOR: radial-gradient(oklch(39.6% 0.141 25.723), oklch(70.8% 0 0));
+}
+
+/* GENERAL STYLE */
+
+body {
+    font-family: var(--FF);
+    font-size: var(--FS);
+    background-image: var(--BODY-BG-COLOR);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        'hd hd hd'
+        'mn mn mn';
+}
+
+header {
+    grid-area: hd;
+    text-align: center;
+    position: sticky;
+    font-family: var(--FF-HD);
+    font-size: var(--FSL);
+    margin-bottom: 0.5rem;
+    background-color: var(--HEADER-BG-COLOR);
+    color: var(--HEADER-COLOR);
+    top: 0;
+    z-index: 9999;
+    height: 10.3rem;
+}
+
+header h1 {
+
+    max-width: 12ch;
+    line-height: 3.8rem;
+    margin-top: 1.3rem;
+}
+
+header img {
+    margin-top: 1rem;
+}
+
+
+main {
+    grid-area: mn;
+    min-height: 100dvh;
+    display: grid;
+    margin: 3rem;
+}
+
+.conteudo {
+    display: flex;
+    border: solid black;
+    padding: 1em;
+    border-radius: 2rem;
+}
+
+.imagem {
+    max-height: 32rem;
+}
+
+figcaption {
+    margin-left: -50000rem;
+}
+
+.texto {
+    display: grid;
+    align-content: start;
+    max-height: 30.1rem;
+    min-height: auto;
+    overflow-y: auto;
+    width: 100%;
+    padding: 0 1rem;
+    row-gap: 2.5rem;
+    line-height: 3rem;
+}
+
+.texto p {
+    text-align: justify;
+}
+
+img {
+    border-radius: 1.2rem;
+}
+
+.video {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video iframe {
+    width: 100%;
+    max-width: 80rem;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border-radius: 12px;
+    margin: 2rem 0;
+    border: 0.5rem solid whitesmoke;
+}
+
+
+/* ORIGIN CSS */
+
+.origins-body {
+    background-image: radial-gradient(oklch(68.1% 0.162 75.834), oklch(70.7% 0.165 254.624));
+}
+
+.origins-header {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    background-color: oklch(28.2% 0.091 267.935);
+}
+
+.origins-span {
+    color: oklch(68.1% 0.162 75.834);
+
+}
+
+
+/* Syndicate */
+
+.syndicate-body {
+    background-image: radial-gradient(oklch(37% 0.013 285.805), oklch(13% 0.028 261.692));
+}
+
+.syndicate-header {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    background-color: oklch(27.8% 0.033 256.848);
+}
+
+.syndicate-span {
+    color: oklch(25.8% 0.092 26.042);
+}
+
+.sydicate {
+    color: white;
+}
+
+.sydicate-conteudo {
+    border: solid black 0.5rem;
+}
+
+
+/* Unity */
+
+.unity-body {
+    background-image: radial-gradient(oklch(90.1% 0.058 230.902), whitesmoke);
+}
+
+.unity-header {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    background-color: oklch(44.4% 0.177 26.899);
+}
+
+.unity-span {
+    color: oklch(28.2% 0.091 267.935);
+}
+
+.unity-video iframe {
+    border: 0.5rem solid blue;
+}
+
+
+/* Rogue */
+
+
+.rogue-body {
+    background-image: radial-gradient(oklch(44.6% 0.043 257.281), oklch(21% 0.034 264.665));
+}
+
+.rogue-header {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    background-color: oklch(25.8% 0.092 26.042);
+}
+
+.rogue-span {
+    color:oklch(63.7% 0.237 25.331);
+}
+
