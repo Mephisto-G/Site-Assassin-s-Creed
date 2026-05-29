@@ -1,7 +1,7 @@
 /* FONTS */
 @font-face {
     font-family: 'Assassin';
-    src: url('/fonts/assassins-creed/Assassin$.ttf') format('truetype');
+    src: url(/fonts/assassins-creed/Assassin$.ttf) format('truetype');
     font-weight: bold;
     font-style: normal;
 }
@@ -49,6 +49,9 @@ body {
 }
 
 header {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
     grid-area: hd;
     text-align: center;
     position: sticky;
@@ -60,6 +63,8 @@ header {
     top: 0;
     z-index: 9999;
     height: 10.3rem;
+    height: auto;
+    font-weight: bolder;
 }
 
 header h1 {
@@ -67,6 +72,12 @@ header h1 {
     max-width: 12ch;
     line-height: 3.8rem;
     margin-top: 1.3rem;
+}
+
+span {
+    color: oklch(63.7% 0.237 25.331);
+    ;
+    ;
 }
 
 header img {
@@ -134,7 +145,7 @@ img {
 }
 
 
-/* ORIGIN CSS */
+/* ORIGINS CSS */
 
 .origins-body {
     background-image: radial-gradient(oklch(68.1% 0.162 75.834), oklch(70.7% 0.165 254.624));
@@ -216,6 +227,91 @@ img {
 }
 
 .rogue-span {
-    color:oklch(63.7% 0.237 25.331);
+    color: oklch(63.7% 0.237 25.331);
 }
 
+.rogue-texto {
+    color: white;
+}
+
+/* Black Flag */
+
+.ac4-body {
+    background-image: radial-gradient(oklch(44.6% 0.043 257.281), oklch(26.8% 0.007 34.298));
+}
+
+.ac4-header {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    background-color: oklch(21.8% 0.008 223.9);
+}
+
+.ac4-header h1 {
+    max-width: 15ch;
+}
+
+.ac4-span {
+    color: oklch(63.7% 0.237 25.331);
+}
+
+.ac4-texto {
+    color: whitesmoke;
+}
+
+/* Ac3 */
+
+.ac3-body {
+    background-image: radial-gradient(oklch(70.4% 0.191 22.216), white);
+}
+
+.ac3-header {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    background-color: oklch(28.2% 0.091 267.935);
+}
+
+.ac3-header h1 {
+    max-width: 10ch;
+}
+
+.ac3-span {
+    color: oklch(63.7% 0.237 25.331);
+}
+
+
+/* Ac2 */
+
+.ac2-header h1 {
+    max-width: 10ch;
+}
+
+
+/* Ac1 */
+
+.ac1-header h1 {
+    max-width: 10ch;
+}
+
+
+
+/* China */
+
+.ac-china-header {
+    height: auto;
+}
+
+.ac-china-span {
+    color: black;
+}
+
+.ac-china-header img {
+    margin-top: 30px;
+}
+
+/* Liberation */
+
+.ac-liberation-header h1{
+    max-width: 15ch;
+}
