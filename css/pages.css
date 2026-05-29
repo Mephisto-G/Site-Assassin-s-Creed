@@ -103,6 +103,12 @@ main {
     max-height: 32rem;
 }
 
+.imagem img {
+    border-radius: 1.2rem;
+    max-height: 33rem;
+    width: auto;
+}
+
 figcaption {
     margin-left: -50000rem;
 }
@@ -121,10 +127,6 @@ figcaption {
 
 .texto p {
     text-align: justify;
-}
-
-img {
-    border-radius: 1.2rem;
 }
 
 .video {
@@ -295,12 +297,7 @@ img {
 }
 
 
-
 /* China */
-
-.ac-china-header {
-    height: auto;
-}
 
 .ac-china-span {
     color: black;
@@ -312,6 +309,6 @@ img {
 
 /* Liberation */
 
-.ac-liberation-header h1{
+.ac-liberation-header h1 {
     max-width: 15ch;
 }
