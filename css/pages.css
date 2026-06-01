@@ -46,6 +46,7 @@ body {
     grid-template-areas:
         'hd hd hd'
         'mn mn mn';
+    min-height: 100dvh;
 }
 
 header {
@@ -63,7 +64,6 @@ header {
     color: var(--HEADER-COLOR);
     top: 0;
     z-index: 9999;
-    height: 10.3rem;
     height: auto;
     font-weight: bolder;
     gap: 15px;
@@ -99,7 +99,6 @@ header img {
 
 main {
     grid-area: mn;
-    min-height: 100dvh;
     display: grid;
     margin: 3rem;
 }
@@ -331,7 +330,7 @@ figcaption {
     .conteudo img {
         display: none;
     }
-    
+
     header {
         font-size: var(--FS);
     }
@@ -348,7 +347,7 @@ figcaption {
 }
 
 @media (min-width: 576px) {
-     .conteudo img {
+    .conteudo img {
         display: block;
     }
 

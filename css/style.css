@@ -40,8 +40,7 @@ body {
     font-family: var(--FF);
     font-size: var(--FS);
     background-image: var(--BODY-BG-COLOR);
-    width: 100%vh;
-    height: 100dvh;
+    min-height: 100dvh;
 }
 
 header {
@@ -102,7 +101,6 @@ article h2 {
     justify-content: center;
     gap: 2rem;
     padding: 1rem;
-    width: 100%;
 }
 
 figcaption {
@@ -180,7 +178,6 @@ figcaption {
         flex-flow: row wrap;
         justify-content: center;
         gap: 2rem;
-        width: 100%;
     }
 
     .first .card {
@@ -190,7 +187,6 @@ figcaption {
 
     .first .card img {
         display: block;
-        width: 100%;
         height: auto;
     }
 
@@ -224,7 +220,6 @@ figcaption {
     .first,
     .second {
         gap: 2rem;
-        width: 100%;
         padding: 1.6rem;
     }
 
