@@ -50,10 +50,11 @@ body {
 
 header {
     display: flex;
+    position: relative;
     justify-content: center;
     gap: 1rem;
     grid-area: hd;
-    text-align: center;
+    align-items: center;
     position: sticky;
     font-family: var(--FF-HD);
     font-size: var(--FSL);
@@ -65,23 +66,34 @@ header {
     height: 10.3rem;
     height: auto;
     font-weight: bolder;
+    gap: 15px;
 }
 
 header h1 {
-
     max-width: 12ch;
     line-height: 3.8rem;
-    margin-top: 1.3rem;
+    margin-top: 5px;
+}
+
+header p {
+    position: absolute;
+    top: 18px;
+}
+
+header a:link,
+header a:visited {
+    text-decoration: none;
+    color: whitesmoke;
 }
 
 span {
     color: oklch(63.7% 0.237 25.331);
-    ;
-    ;
+    display: flex;
+    justify-content: center;
 }
 
 header img {
-    margin-top: 1rem;
+    margin-top: 1px;
 }
 
 
@@ -296,7 +308,6 @@ figcaption {
     max-width: 10ch;
 }
 
-
 /* China */
 
 .ac-china-span {
@@ -311,4 +322,46 @@ figcaption {
 
 .ac-liberation-header h1 {
     max-width: 15ch;
+}
+
+
+/* MEDIA */
+
+@media (min-width: 320px) {
+    .conteudo img {
+        display: none;
+    }
+    
+    header {
+        font-size: var(--FS);
+    }
+
+    header p {
+        left: 10px;
+        font-size: var(--FS);
+        top: 40px;
+    }
+
+    header img {
+        display: none;
+    }
+}
+
+@media (min-width: 576px) {
+     .conteudo img {
+        display: block;
+    }
+
+    header {
+        font-size: var(--FSL);
+    }
+
+    header img {
+        display: block;
+    }
+
+    header p {
+        font-size: var(--FSL);
+        top: 18px;
+    }
 }
