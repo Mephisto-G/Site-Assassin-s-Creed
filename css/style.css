@@ -93,6 +93,7 @@ article h2 {
     border: solid black;
     border-radius: 5rem;
     overflow: hidden;
+    margin: min(1.5rem, 8%)
 }
 
 .secondary {
